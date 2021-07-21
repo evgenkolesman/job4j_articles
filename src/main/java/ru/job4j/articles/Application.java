@@ -10,6 +10,8 @@ import ru.job4j.articles.store.WordStore;
 import java.io.InputStream;
 import java.util.Properties;
 
+import static java.lang.System.gc;
+
 public class Application {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Application.class.getSimpleName());
@@ -36,5 +38,4 @@ public class Application {
         }
         return properties;
     }
-
 }
